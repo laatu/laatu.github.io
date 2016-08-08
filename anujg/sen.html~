@@ -26,7 +26,7 @@ function loadGmailApi() {
 $scope.sendEmail = function() {
     var content     = 'HELLO';
     // I have an email account on GMail.  Lets call it 'theSenderEmail@gmail.com'
-    var sender      = 'theSenderEmail@gmail.com';
+    var sender      = 'laatuji@gmail.com';
     // And an email account on Hotmail.  Lets call it 'theReceiverEmail@gmail.com'\
     // Note: I tried several 'receiver' email accounts, including one on GMail.  None received the email.
     var receiver    = 'theReceiverEmail@hotmail.com';
