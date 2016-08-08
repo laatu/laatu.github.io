@@ -1,0 +1,69 @@
+<html>
+    <head>
+         <script src=jquery-3.0.0.js></script>
+       
+        <script>
+            $(function () {
+    $("#maincontent > div:gt(0)").hide();
+    $("#menu a").on("click", function (e) {
+        var href = $(this).attr("href");
+        $("#maincontent > " + href).show();
+        $("#maincontent > :not(" + href + ")").hide();
+    });
+});
+        
+        </script>
+        
+        <style>
+            #page {
+    margin-left: 200px;
+}
+#maincontent {
+    float: right;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+#menuleftcontent{
+    float: left;
+    width: 200px;
+    margin-left: -200px;
+    background-color: #CCCCCC;
+}
+#clearingdiv {
+    clear: both;
+}
+        
+        </style>
+        
+        
+        
+        <title> here
+        </title>
+    </head>
+    
+    <body><div id="page">
+    <div id="maincontent">
+        <div id="firstcontent">firstcontent</div>
+        <div id="secondcontent">secondcontent</div>
+        
+    </div>
+    <div id="menuleftcontent">
+        <ul id="menu">
+            <li><a href="#firstcontent">first</a></li>
+            <li><a href="#secondcontent">second</a></li>
+                
+            <li> <a href="Bright%20grren/index.html">Brigh Geen</a></li>
+                <li><a href="cool%20blue/index.html">Cool Green</a></li>
+                            <li><a href="cute%20pink/index.html">Cute pink</a>
+            </li>
+    
+<li><a href="dark%20green/index.html">Dark Green  </a></li>
+<li><a href="Good%20gray/index.html">Good Gray</a></li>
+<li><a href="greenish/index.html">Greenish</a></li>
+<li><a href="indigo/index.html">Indigo</a></li>
+        </ul>
+    </div>
+    <div id="clearingdiv"></div>
+</div>
+    
+    </body></html>

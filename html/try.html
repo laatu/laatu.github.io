@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#container {
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+#image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+}
+
+<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+	</style>
+</head>
+
+<body>
+<div id="container">
+  <img id="image" src="http://www.noao.edu/image_gallery/images/d4/androa.jpg" />
+  <p id="text">
+    Hello World anuj!
+  </p>
+</div>
+<div id="container">
+  <img id="image" src="http://www.noao.edu/image_gallery/images/d4/androa.jpg" />
+  <p id="text">
+    Mera world
+  </p>
+</div>
+	
+</body>
+</html>
